@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
@@ -1470,7 +1470,9 @@
 
 	p {
 		margin: 0 0 2em 0;
+        
 	}
+
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
@@ -1604,6 +1606,7 @@
 	.align-right {
 		text-align: right;
 	}
+
 
 /* Section/Article */
 
@@ -2582,29 +2585,57 @@
 
 /* Header */
 
+
 	#header {
-		text-align: center;
+		text-align: left;
 		padding: 6em 0 4em 0;
 	}
+
+        #header p {
+            text-align: justify;
+            color: azure;
+        }
+
+        #header d {
+            font: lighter;
+            font-size: large;
+        }
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.65);
 		}
+        #header h2 {
+            font: lighter;
+        }
 
-		#header .avatar {
-			border-radius: 100%;
-			display: inline-block;
-			margin: 0 0 2em 0;
-			padding: 0.5em;
-			border: solid 1px rgba(255, 255, 255, 0.25);
-			background-color: rgba(255, 255, 255, 0.075);
-		}
+        #header .alex {
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 0 2em 0;
+            padding: 0.5em;
+            border: solid 1px rgba(255, 255, 255, 0.25);
+            background-color: rgba(255, 255, 255, 0.075);
+        }
 
-			#header .avatar img {
-				border-radius: 100%;
-				display: block;
-				width: 10em;
-			}
+            #header .alex img {
+                border-radius: 50%;
+                display: block;
+                width: 10em;
+            }
+
+        #header .project {
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 0 2em 0;
+            padding: 0.5em;
+            border: solid 1px rgba(255, 255, 255, 0.25);
+            background-color: rgba(255, 255, 255, 0.075);
+        }
+            #header .project img {
+                border-radius: 50%;
+                display: block;
+                width: 10em;
+            }
 
 		@media screen and (max-width: 1280px) {
 
@@ -2613,6 +2644,18 @@
 			}
 
 		}
+ .project {
+    display: inline-block;
+    margin: 0 0 2em 0;
+    padding: 0.5em;
+    
+
+}
+
+ .project img {
+        display: block;
+        width: 10em;
+    }
 
 /* Footer */
 
