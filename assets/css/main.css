@@ -2625,12 +2625,13 @@
                 width: 10em;
             }
 
-        #header .project {
+        #header .handwriting {
             display: inline-block;
-            margin: 0 0 2em 0;
-            padding: 2em;
+            align-self: center;
+            margin: 0 0 2em 0em;
+            padding: 0 0 5px 400px;
         }
-            #header .project img {
+            #header .handwriting img {
                 display: block;
                 width: calc(100% / 3)
             }
@@ -2662,6 +2663,7 @@
         }
 
         .content p {
+            text-align: left;
             margin: 0;
             bottom: 0;
             position:relative;
@@ -2675,6 +2677,9 @@
                 width: 100%;
                 border-radius: 5px;
                 border: 3px solid #ddd;
+            }
+            .content p {
+            text-align: left;
             }
         }
 
