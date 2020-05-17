@@ -41,27 +41,136 @@
                     <li><a href="mailto:alex730310@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
                 </ul>
                 <h2>EDUCATION</h2>
-                    <d><i>Sept. 2020 ~ June 2022</i></d>
-                    <p>
-                        RWTH Aachen University M.S. Robotic Systems Engineering
-                    </p>
-                    <d><i>Sept. 2014 ~ June 2018</i></d>
-                    <p>
-                        National Tsing Hua University B.S. Power Mechanical Engineering
-                    </p>
+                <d><i>Sept. 2020 ~ June 2022</i></d>
+                <p>
+                    RWTH Aachen University M.S. Robotic Systems Engineering
+                </p>
+                <d><i>Sept. 2014 ~ June 2018</i></d>
+                <p>
+                    National Tsing Hua University B.S. Power Mechanical Engineering
+                </p>
+                <h2>WORK EXPERIENCE</h2>
+                <d><i>Sept. 2019 ~ June 2020</i></d>
+                <p>
+                    <i>Chieftek Precision Co., Ltd. Taiwan</i> - Robotics Software Engineer
+                </p>
+                <d><i>July 2018 ~ Jan. 2019</i></d>
+                <p>
+                    <i>LEISO Co., Ltd. Taiwan</i> -   R&D Engineer
+                </p>
+                <d><i>Mar. 2018 ~ June 2018</i></d>
+                <p>
+                    <i>LEISO Co., Ltd. Taiwan</i>  -  R&D Intern
+                </p>
                 <h2>PROJECTS</h2>
-            </header>
 
-            <section class="project" width="200">
-                <div>
-                    <img src="images/optimization.jpg" />
-
+                <div class="content">
+                    <img src="images/optimization.JPG" />
+                    <div class="text">
+                        <h3><strong>Six Axis Arm Stroke Measurement Optimization</strong></h3>
+                        <ul>
+                            <li>
+                                Independently achieved the software that schedules a measuring procedure of a robotic manipulator, helping users
+                                generate optimal test paths for the measurement of DH parameters of a robotic arm.
+                            </li>
+                            <li>
+                                Increased the efficiency of the measuring procedure by fifteen times with the help of the software.
+                            </li>
+                        </ul>
+                        <p><i>Keywords: OpenGL, Animation, Kinematics, Numerical Optimization, Collision Detection.</i></p>
+                        <a href="images/Demo.mp4" title="vedio">VEDIO</a>
+                        <a href="images/[DM]MMD-200 (EN).pdf" title="DM">DM</a>
+                    </div>
                 </div>
-            </section>
+                <div class="content">
+                    <img class="mySlides" src="images/robot.jpg">
+                    <img class="mySlides" src="images/sEMG.jpg">
+
+                    <script>
+                        // Automatic Slideshow - change image every 3 seconds
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) { myIndex = 1 }
+                            x[myIndex - 1].style.display = "block";
+                            setTimeout(carousel, 3000);
+                        }
+                    </script>
+                    <div class="text">
+                        <h3><strong>Intelligent Lower-Limb Exoskeleton</strong></h3>
+                        <ul>
+                            <li>
+                                Pioneered an assistance device featuring with four-bar linkage prosthetic knee that fits the paths specified by the
+                                wearer. The robotic system can successfully visualize recorded motions in 3D space and provide gait training.
+                            </li>
+                            <li>
+                                Accomplished an observer-based sensor fusion algorithm that uses the outputs from a 6-axis inertial measurement
+                                unit to estimate the ground-truth joint angles.
+                            </li>
+                            <li>
+                                Successfully learned the relation between surface electromyography(sEMG) signals from lower-limb muscles and angular
+                                configurations of the knee joints by training Recurrent Neural Network, thus estimating the wearer’s body’s motions.
+                            </li>
+                        </ul>
+                        <p><i>Keywords: Matlab, sEMG, Kinematics, Animation, IMU, Sensor Fusion, Gait Rehibilitation.</i></p>
+                        <a href="images/poster.pdf" title="poster">POSTER</a>
+                        <a href="https://github.com/middleyuan/sensorFusion" title="code">CODE</a>
+                        <a href="https://youtu.be/2tqYvKDsSJs" title="vedio">VEDIO</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/CNC.PNG" />
+                    <div class="text">
+                        <h3><strong>Computer Numerical Control Software for a three-axis robotic manipulator</strong></h3>
+                        <ul>
+                            <li>
+                                Successfully drived the robot arm to performed point-to-point positioning and linear/circular path motion.
+                            </li>
+                            <li>
+                                Designed program modules including Graphic User Interface(GUI), Interpolator(INTP), Decoder(DEC), Data Link Interface(LINK) and Kinematic Transformation(TRAFO).
+                            </li>
+                            <li>
+                                Accomplished a method of state machine to synchronize transition conditions and processes in difference modules.
+                            </li>
+                        </ul>
+                        <p><i>Keywords: CNC, GM Code, Feed Scheduling, Kinamatics.</i></p>
+                        <a href="images/CNCDemo.mp4" title="vedio">VEDIO</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/machine learning.png" />
+                    <div class="text">
+                        <h3><strong>A Deep Visual-Semantic Embedding Model</strong></h3>
+                        <ul>
+                            <li>
+                                Trained a linear transformation from pre-trained visual embedding to pre-trained text embedding.
+                            </li>
+                            <li>
+                                Used cifar100 as data set and implemented Convolution Neural Network and Residual Network as a visual model.
+                            </li>
+                            <li>
+                                Improved classification accuracy by 20.3%.
+                            </li>
+                        </ul>
+                        <p><i>Keywords: DeViSE, Residual Network, Convolution Neural Network, Text Embedding.</i></p>
+                        <a href="images/Tech_Report.pdf" title="report">REPORT</a>
+                        <a href="https://github.com/middleyuan/DeViSE" title="code">CODE</a>
+                    </div>
+                </div>
+            </header>
+            
+
 
             <!-- Footer -->
             <footer id="footer">
-                <p>&copy; Untitled. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>. Demo Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+                <p>&copy; All rights reserved. Design by AlexTseng.</p>
             </footer>
 
         </div>
