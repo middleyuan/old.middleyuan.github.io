@@ -2652,6 +2652,8 @@
             margin-right: 10px;
             display: block;
             width: calc(100% / 2.5);
+            border-radius: 5px;
+            border: 3px solid #ddd;
         }
 
         .content h3 {
@@ -2671,6 +2673,8 @@
             }
             .content img {
                 width: 100%;
+                border-radius: 5px;
+                border: 3px solid #ddd;
             }
         }
 
