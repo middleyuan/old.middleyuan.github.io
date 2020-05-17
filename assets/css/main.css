@@ -2666,7 +2666,7 @@
         }
         @media screen and (max-width: 480px) {
             .content {
-                display:table-column;
+                display:block;
                 padding-top: 100%;
             }
             .content img {
