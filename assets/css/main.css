@@ -2631,7 +2631,7 @@
             align-self: center;
         }
             #header .handwriting img {
-                width: calc(100% / 2)
+                width: calc(100% / 2);
             }
 
 		@media screen and (max-width: 1280px) {
@@ -2639,6 +2639,15 @@
 			#header {
 				padding: 4em 0 2em 0;
 			}
+            #header .handwriting img {
+                width: calc(100% / 1.5);
+            }
+		}
+        @media screen and (max-width: 736px) {
+
+            #header p {
+                font-size: 1em;
+            }
 
 		}
 
