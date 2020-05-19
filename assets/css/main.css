@@ -1586,6 +1586,11 @@
 			padding: 1em 1.5em;
 			overflow-x: auto;
 		}
+        @media screen and (max-width: 1000px) {
+            pre {
+                white-space: nowrap;
+            }
+        }
 
 	hr {
 		border: 0;
@@ -2634,7 +2639,7 @@
                 width: calc(100% / 2);
             }
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1000px) {
 
 			#header {
 				padding: 4em 0 2em 0;
@@ -2691,7 +2696,7 @@
             bottom: 0;
             position:relative;
         }
-        @media screen and (max-width: 1280px) {
+        @media screen and (max-width: 1000px) {
             .content {
                 text-align: left;
                 display: block;
